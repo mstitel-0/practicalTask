@@ -1,9 +1,7 @@
-
 # Github Fetcher
+
 This project uses Github REST API to fecth repositories.
 It aims to fetch repositotiries for a given user and retrieve all the repositories which are not forks with all corresponding branches names and sha of the last commit.
-
-
 
 ## Features
 
@@ -12,11 +10,13 @@ It aims to fetch repositotiries for a given user and retrieve all the repositori
 - Show information like: repository name, owner login and all bracnhes 
 - For each branch displays: name and last commit sha
 
+## Requirements
+
+- Java version 21
 
 ## Usage
 
 While running an application, you can use next API endpoint to get all repositories for a given username.
-
 
 ## API Reference
 
@@ -41,6 +41,7 @@ While running an application, you can use next API endpoint to get all repositor
 ```
 
 #### Responses ####
+
 - **200 OK**: Successful response with the list of repositories.
 ```json
 [
@@ -56,6 +57,7 @@ While running an application, you can use next API endpoint to get all repositor
     }
 ]
 ```
+
 - **404 Not found**: The given user does not exist.
 ```json
 {
